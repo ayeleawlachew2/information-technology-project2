@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #f6f7fb;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.container .clock {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.clock label {
+  position: absolute;
+  inset: 8px;
+  text-align: center;
+  transform: rotate(calc(var(--i) * (360deg / 12)));
+  color: #18191a;
+  font-size: 10px;
+}
+.clock label span {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  transform: rotate(calc(var(--i) * (-360deg / 12)));
+  color: #18191a;
+}
+.container .indicator {
+  position: absolute;
+  height: 3px;
+  width: 3px;
+  display: flex;
+  justify-content: center;
+}
+.indicator::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: #18191a;
+  border: 1px solid #e74c3c;
+}
+.indicator .hand {
+  position: absolute;
+  height: 35px;
+  width: 1px;
+  bottom: 0;
+  border-radius: 0.5px;
+  transform-origin: bottom;
+  background: #e74c3c;
+}
+.hand.minute {
+  height: 30px;
+  width: 2px;
+  background: #18191a;
+}
+.hand.hour {
+  height: 25px;
+  width: 3px;
+  background: #18191a;
+}
+.mode-switch {
+  padding: 3px 6px;
+  border-radius: 2px;
+  font-size: 8px;
+  font-weight: 400;
+  display: inline-block;
+  color: #fff;
+  background: #18191a;
+  cursor: pointer;
+}

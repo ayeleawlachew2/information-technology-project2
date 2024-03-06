@@ -1,0 +1,158 @@
+/* Added styles for a modern and standard exam page */
+
+/* General styles */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+#header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Navigation */
+#navigation {
+  background-color: #f9f9f9;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Content */
+#content {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fieldset {
+  border: none;
+}
+
+.user-details {
+  float: right;
+  margin-top: -15px;
+  padding: 10px;
+  border: 1px solid #dadcdc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-details table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.user-details td {
+  padding: 5px 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.user-details td:first-child {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.user-details img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Question */
+.question-container {
+  margin-top: 20px;
+}
+
+.question-container hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.question {
+  color: #0f0000;
+  font-size: 20px;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.question-options {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.question-options label {
+  margin-bottom: 5px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+/* #footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  #header h1 {
+    font-size: 20px;
+  }
+
+  .user-details {
+    float: none;
+    margin-top: 10px;
+  }
+
+  .user-details img {
+    max-width: 100px;
+  }
+}

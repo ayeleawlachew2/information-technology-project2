@@ -1,0 +1,198 @@
+/* Reset default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+/* Main container */
+#main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Sidebar */
+aside {
+  background-color: #222;
+  color: #fff;
+  width: 250px;
+}
+
+/* Sidebar links */
+aside a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+aside a:hover {
+  background-color: #555;
+}
+
+/* Content section */
+section#content-section {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Typography */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Header */
+header {
+  background-color: #17c7c1e1;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.heading {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.subheading {
+  font-size: 16px;
+  margin: 0;
+}
+#sidebar {
+  background-color: #6e859b;
+  padding: 20px;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  margin-bottom: 10px;
+}
+
+#sidebar ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#sidebar ul li a:hover {
+  background-color: #e9ecef;
+}
+
+#sidebar ul ul {
+  padding-left: 20px;
+}
+
+#sidebar ul ul li a {
+  padding: 8px 20px;
+}
+
+#sidebar ul ul ul {
+  padding-left: 40px;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-toggle i {
+  font-size: 24px;
+  color: #333;
+}
+/* Submenu */
+#sidebar ul li.has-submenu > .submenu {
+  display: none;
+}
+
+#sidebar ul li.active > .submenu {
+  display: block;
+}
+
+#sidebar ul li .submenu li a {
+  padding-left: 30px;
+}
+
+#sidebar ul li .submenu ul li a {
+  padding-left: 40px;
+}
+
+#sidebar ul li .submenu ul ul li a {
+  padding-left: 50px;
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px; /* set the height of the logo */
+  width: 100px; /* set the width of the logo */
+  border-radius: 100px; /* make the logo circular */
+  overflow: hidden;
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.heading {
+  font-family: 'Times New Roman', Times, serif;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 28px;
+  vertical-align: middle;
+}
+/* footer {
+  font-family: Times New Roman, Times, serif;
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+} */
